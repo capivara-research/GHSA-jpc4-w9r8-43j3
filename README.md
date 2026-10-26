@@ -16,6 +16,10 @@ Together, these behaviors allow an authenticated Control Panel user with only th
 
 This repository documents the demonstrated security impact: **unauthorized file creation and bypass of the server-side extension policy**. It does **not** claim remote code execution. In the default configuration tested, staged files were stored below `storage/app/private/statamic/file-uploads/` and were not directly executable over HTTP.
 
+The complete public technical report, including affected-version boundaries,
+reproduction logic, duplicate analysis, and remediation guidance, is available
+at [`evidence/technical-report.md`](evidence/technical-report.md).
+
 ## Vendor notification
 
 The issue was reported privately to the Statamic maintainers through GitHub Private Vulnerability Reporting on **2026-08-24** as [`GHSA-jpc4-w9r8-43j3`](https://github.com/statamic/cms/security/advisories/GHSA-jpc4-w9r8-43j3). The maintainer `jasonvarga` accepted the report on **2026-10-06**. Researcher credit was accepted for [`capivara-research`](https://github.com/capivara-research).
